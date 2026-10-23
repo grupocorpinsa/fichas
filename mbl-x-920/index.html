@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- En revisión: que los buscadores no la indexen todavía. Quitar al lanzarla. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Manitou MBL-X 920 — Ficha técnica | Tecnogrúas</title>
+  <meta name="description" content="Retroexcavadora Manitou MBL-X 920: motor Perkins de 70 kW, cargador de 1 m³, 4.74 m de profundidad de excavación. Ficha técnica, rendimiento y accesorios.">
+  <meta property="og:title" content="Manitou MBL-X 920 — Ficha técnica">
+  <meta property="og:description" content="Retroexcavadora: 4.74 m de excavación · cargador de 1 m³ · 70 kW.">
+  <meta property="og:image" content="img/miniatura-cotizacion.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <style>
+    /* ---- Paleta: pieza de marca (cara al cliente) → naranja y negro, sin azul ---- */
+    :root {
+      --corp-accent:        #ff6600;
+      --corp-black:         #000000;
+      --ink:                #111111;
+      --bg:                 #f4f6fb;
+      --surface:            #ffffff;
+      --surface-alt:        #fafbfd;
+      --border:             #e2e8f0;
+      --text:               #0f172a;
+      --text-muted:         #64748b;
+      --text-light:         #94a3b8;
+      --accent-soft:        #fff1e6;
+      --on-dark:            #ffffff;
+      --on-dark-muted:      #cbd5e1;
+      --radius:             12px;
+      --radius-sm:          8px;
+      --shadow:             0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
+      --max:                1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 0;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .icon-sm { font-size: 18px; vertical-align: middle; }
+    .icon-md { font-size: 22px; vertical-align: middle; }
+
+    /* ---- Barra superior ---- */
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .topbar .wrap { display: flex; align-items: center; gap: 16px; min-height: 68px; }
+    .logo { height: 36px; width: auto; max-width: 60vw; flex-shrink: 1; object-fit: contain; }
+    .topbar nav { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+    .topbar nav a {
+      text-decoration: none; color: var(--text-muted); font-weight: 500;
+      padding: 8px 12px; border-radius: var(--radius-sm);
+    }
+    .topbar nav a:hover, .topbar nav a:focus-visible { color: var(--ink); background: var(--bg); }
+
+    /* ---- Botones ---- */
+    .btn {
+      min-height: 44px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600;
+      cursor: pointer; border: none; padding: 0 20px; display: inline-flex; align-items: center;
+      gap: 8px; text-decoration: none; transition: opacity .2s;
+    }
+    .btn:hover { opacity: .88; }
+    .btn:focus-visible { outline: 3px solid var(--corp-accent); outline-offset: 2px; }
+    .btn-accent  { background: var(--corp-accent); color: var(--on-dark); }
+    .btn-dark    { background: var(--ink); color: var(--on-dark); }
+    .btn-outline { background: transparent; border: 1.5px solid var(--ink); color: var(--ink); }
+    .btn-outline-light { background: transparent; border: 1.5px solid var(--on-dark); color: var(--on-dark); }
+
+    /* ---- Portada ---- */
+    .hero { position: relative; background: var(--corp-black); color: var(--on-dark); overflow: hidden; }
+    .hero img.bg {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.86) 0%, rgba(0,0,0,.6) 45%, rgba(0,0,0,0) 80%);
+    }
+    .hero .wrap { position: relative; z-index: 1; padding-top: 72px; padding-bottom: 72px; }
+    .eyebrow {
+      display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--corp-accent);
+    }
+    .hero h1 { font-size: 52px; line-height: 1.05; margin: 10px 0 8px; font-weight: 700; }
+    .hero .sub { font-size: 18px; color: var(--on-dark-muted); max-width: 520px; margin: 0 0 28px; }
+    .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* ---- Cifras clave ---- */
+    .kpis {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow); margin-top: -40px; position: relative; z-index: 2; overflow: hidden;
+    }
+    .kpi { padding: 22px 24px; border-right: 1px solid var(--border); }
+    .kpi:last-child { border-right: none; }
+    .kpi .val { font-size: 30px; font-weight: 700; color: var(--ink); line-height: 1.1; }
+    .kpi .val small { font-size: 16px; font-weight: 600; color: var(--text-muted); margin-left: 2px; }
+    .kpi .lbl { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+    .kpi .bar { width: 28px; height: 3px; background: var(--corp-accent); margin-bottom: 12px; border-radius: 2px; }
+
+    /* ---- Secciones ---- */
+    section { padding: 56px 0 8px; }
+    .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px; flex-wrap: wrap; }
+    .sec-num {
+      font-size: 13px; font-weight: 700; color: var(--corp-accent); letter-spacing: .06em;
+    }
+    h2 { font-size: 26px; margin: 0; color: var(--ink); }
+    .sec-head p { margin: 0; color: var(--text-muted); flex-basis: 100%; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+
+    /* ---- Galería ---- */
+    .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 220px 220px; gap: 12px; }
+    .gallery button {
+      padding: 0; border: none; border-radius: var(--radius); overflow: hidden; cursor: zoom-in;
+      background: var(--corp-black);
+    }
+    .gallery button:focus-visible { outline: 3px solid var(--corp-accent); outline-offset: 2px; }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+    .gallery button:hover img { transform: scale(1.03); }
+    .gallery .g1 { grid-row: 1 / 3; }
+    .gallery .g4 { grid-column: 2 / 4; }
+
+    /* ---- Puntos fuertes ---- */
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature { padding: 22px; }
+    .feature .material-symbols-outlined {
+      font-size: 26px; color: var(--corp-accent); background: var(--accent-soft);
+      border-radius: var(--radius-sm); padding: 8px;
+    }
+    .feature h3 { font-size: 16px; margin: 14px 0 6px; color: var(--ink); }
+    .feature p { margin: 0; color: var(--text-muted); font-size: 14px; }
+
+    /* ---- Datos técnicos ---- */
+    .specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
+    .spec-group .card-header {
+      padding: 14px 20px; border-bottom: 1px solid var(--border); font-weight: 700; color: var(--ink);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .spec-group .card-header .material-symbols-outlined { color: var(--corp-accent); }
+    .spec-group table { width: 100%; border-collapse: collapse; }
+    .spec-group td { padding: 10px 20px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .spec-group tr:last-child td { border-bottom: none; }
+    .spec-group td:first-child { color: var(--text-muted); }
+    .spec-group td:last-child { text-align: right; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .spec-group td.wrap-ok { white-space: normal; }
+    .code {
+      display: inline-block; font-size: 11px; font-weight: 700; color: var(--corp-accent);
+      background: var(--accent-soft); border-radius: 4px; padding: 0 5px; margin-left: 6px;
+    }
+
+    /* ---- Dimensiones y diagramas ---- */
+    .dims { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .dims figure, .charts figure { margin: 0; padding: 16px; }
+    .dims img { aspect-ratio: 1 / 1; object-fit: contain; width: 100%; }
+    figcaption { font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center; }
+    .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 16px; font-size: 13px; color: var(--text-muted); }
+    .legend b { color: var(--ink); }
+    .charts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .charts button { padding: 0; border: none; background: none; cursor: zoom-in; width: 100%; }
+
+    /* ---- Accesorios ---- */
+    .acc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .acc .card { overflow: hidden; display: flex; flex-direction: column; }
+    .acc .pic { background: var(--surface-alt); border-bottom: 1px solid var(--border); padding: 14px; height: 150px; }
+    .acc .pic img { width: 100%; height: 100%; object-fit: contain; }
+    .acc .body { padding: 14px 16px 16px; }
+    .acc .kind { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }
+    .acc h3 { font-size: 15px; margin: 4px 0 8px; color: var(--ink); }
+    .acc dl { margin: 0; display: grid; grid-template-columns: auto auto; gap: 2px 10px; font-size: 13px; }
+    .acc dt { color: var(--text-muted); }
+    .acc dd { margin: 0; text-align: right; font-weight: 600; }
+
+    /* ---- Llamado final ---- */
+    .cta {
+      background: var(--corp-black); color: var(--on-dark); border-radius: var(--radius);
+      padding: 36px; display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+      margin-top: 56px;
+    }
+    .cta h2 { color: var(--on-dark); }
+    .cta p { margin: 6px 0 0; color: var(--on-dark-muted); max-width: 560px; }
+    .cta .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .cta .tel { color: var(--on-dark); white-space: nowrap; }
+
+    footer { padding: 40px 0 48px; color: var(--text-muted); font-size: 12.5px; }
+    footer .row { display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 14px; }
+    footer .logo { height: 30px; }
+
+    /* ---- Visor de imágenes ---- */
+    dialog.viewer {
+      border: none; padding: 0; background: transparent; max-width: 96vw; max-height: 94vh;
+    }
+    dialog.viewer::backdrop { background: rgba(0,0,0,.88); }
+    dialog.viewer img { max-width: 96vw; max-height: 90vh; object-fit: contain; border-radius: var(--radius-sm); background: var(--surface); }
+    dialog.viewer .close {
+      position: fixed; top: 14px; right: 14px; width: 44px; height: 44px; border-radius: 50%;
+      border: none; background: var(--surface); color: var(--ink); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ---- Impresión ---- */
+    @media print {
+      .topbar, .hero .actions, .cta .actions, .gallery { display: none; }
+      .hero { background: var(--surface); color: var(--ink); }
+      .hero img.bg, .hero::after { display: none; }
+      .hero .sub { color: var(--text-muted); }
+      .kpis { margin-top: 0; box-shadow: none; }
+      section { break-inside: avoid; }
+    }
+
+    /* ---- Teléfono ---- */
+    @media (max-width: 900px) {
+      .features, .acc { grid-template-columns: repeat(2, 1fr); }
+      .specs, .charts { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .wrap { padding: 0 16px; }
+      .topbar nav { display: none; }
+      .topbar .wrap { justify-content: space-between; }
+      .hero .wrap { padding-top: 48px; padding-bottom: 72px; }
+      .hero h1 { font-size: 36px; }
+      .hero .sub { font-size: 16px; }
+      .hero::after { background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.85) 100%); }
+      .kpis { grid-template-columns: repeat(2, 1fr); }
+      .kpi { border-bottom: 1px solid var(--border); }
+      .kpi:nth-child(2n) { border-right: none; }
+      .kpi:nth-child(n+3) { border-bottom: none; }
+      .kpi { padding: 16px; }
+      .kpi .val { font-size: 22px; }
+      .specs > * { min-width: 0; }
+      .spec-group td { padding: 9px 14px; }
+      .spec-group table { table-layout: fixed; }
+      .spec-group td { overflow-wrap: anywhere; }
+      .spec-group td:last-child { white-space: normal; width: 45%; }
+      .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 120px 120px; }
+      .gallery .g1 { grid-row: auto; grid-column: 1 / 3; }
+      .gallery .g4 { grid-column: auto; }
+      .features { grid-template-columns: 1fr; }
+      .dims { grid-template-columns: 1fr 1fr; }
+      .dims figure:first-child { grid-column: 1 / 3; }
+      .acc { grid-template-columns: 1fr 1fr; }
+      .acc .pic { height: 110px; }
+      .cta { padding: 24px; }
+      h2 { font-size: 22px; }
+    }
+    @media (max-width: 420px) {
+      .acc { grid-template-columns: 1fr; }
+      .topbar .btn { padding: 0 12px; }
+      .topbar .btn .txt { display: none; }
+      .kpi .val { font-size: 20px; }
+      .kpi .val small { font-size: 13px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .gallery img { transition: none; }
+    }
+
+    /* ---- Añadidos de las fichas sin fotos de obra / sin diagramas de carga ---- */
+    .hero.studio { background: radial-gradient(ellipse at 75% 55%, #2a2a2a 0%, #000 70%); }
+    .hero.studio .wrap { display: flex; align-items: center; gap: 24px; padding-bottom: 88px; }
+    .hero.studio .hero-txt { flex: 1 1 50%; }
+    .hero.studio img.maq { flex: 0 1 46%; max-width: 520px; width: 46%; height: auto; filter: drop-shadow(0 18px 30px rgba(0,0,0,.6)); }
+    .gallery.blanca button, .gallery button.blanca { background: #ffffff; }
+    .gallery.blanca img, .gallery button.blanca img { object-fit: contain; }
+    .gallery.tres .g2, .gallery.tres .g3 { grid-column: 2 / 4; }
+    .dims button { padding: 0; border: none; background: none; cursor: zoom-in; width: 100%; display: block; }
+    .spec-group.tri td:nth-child(2), .spec-group.tri td:nth-child(3) { text-align: right; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .spec-group.tri tr.th td { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; }
+    .specs.uno { grid-template-columns: 1fr; }
+    .acc-lista { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .acc-lista .card { display: flex; gap: 14px; padding: 18px; align-items: flex-start; }
+    .acc-lista .material-symbols-outlined { color: var(--corp-accent); background: var(--accent-soft); border-radius: var(--radius-sm); padding: 8px; }
+    .acc-lista b { display: block; color: var(--ink); margin-bottom: 2px; }
+    .acc-lista span:not(.material-symbols-outlined) { color: var(--text-muted); font-size: 14px; }
+    @media (max-width: 900px) { .acc-lista { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .hero.studio .wrap { flex-direction: column; align-items: flex-start; padding-top: 40px; }
+      .hero.studio img.maq { width: 86%; align-self: center; }
+      .gallery.tres { grid-template-rows: 200px 160px; }
+      .gallery.tres .g2, .gallery.tres .g3 { grid-column: auto; }
+      .acc-lista { grid-template-columns: 1fr; }
+      .spec-group.tri td:nth-child(2), .spec-group.tri td:nth-child(3) { white-space: normal; width: 24%; }
+      .spec-group.tri td:last-child { width: 24%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="wrap">
+      <img class="logo" src="https://grupocorpinsa.github.io/assets/img/logo-tecnogruas-642.png" alt="Tecnogrúas">
+      <nav aria-label="Secciones">
+        <a href="#galeria">Galería</a>
+        <a href="#datos">Datos técnicos</a>
+        <a href="#rendimiento">Rendimiento</a>
+        <a href="#accesorios">Cazos y accesorios</a>
+      </nav>
+      <a class="btn btn-accent" href="descargas/ficha-tecnica-mbl-x-920.pdf" download aria-label="Descargar ficha técnica en PDF">
+        <span class="material-symbols-outlined icon-sm">download</span> <span class="txt">Ficha PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Portada -->
+  <div class="hero">
+    <img class="bg" src="img/foto-1.jpg" alt="">
+    <div class="wrap">
+      <span class="eyebrow">Manitou · Retroexcavadora</span>
+      <h1>MBL-X 920</h1>
+      <p class="sub">Retroexcavadora con motor Perkins de 70 kW, cargador de 1 m³ y hasta 4.74 m de profundidad de excavación. Cabina ROPS / FOPS nivel 2.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="https://wa.me/50766196650?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20retroexcavadora%20Manitou%20MBL-X%20920" target="_blank" rel="noopener"><span class="material-symbols-outlined icon-sm">chat</span> Consultar por WhatsApp</a>
+        <a class="btn btn-outline-light" href="#datos"><span class="material-symbols-outlined icon-sm">table_chart</span> Ver datos técnicos</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+
+    <!-- Cifras clave -->
+    <div class="kpis" role="list">
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">4.74<small>m</small></div><div class="lbl">Profundidad máx. de excavación</div></div>
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">1<small>m³</small></div><div class="lbl">Cazo de la cargadora</div></div>
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">70<small>kW</small></div><div class="lbl">Motor Perkins · 395 Nm</div></div>
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">40<small>km/h</small></div><div class="lbl">Velocidad máx. (4.ª marcha)</div></div>
+    </div>
+
+    <!-- 01 Galería -->
+    <section id="galeria">
+      <div class="sec-head"><span class="sec-num">01</span><h2>Galería</h2></div>
+      <div class="gallery tres">
+        <button class="g1" data-full="img/foto-1.jpg" aria-label="Ampliar foto 1"><img src="img/foto-1.jpg" alt="MBL-X 920 cargando material en una obra" loading="lazy"></button>
+        <button class="g2" data-full="img/foto-2.jpg" aria-label="Ampliar foto 2"><img src="img/foto-2.jpg" alt="MBL-X 920 con el cazo lleno de tierra" loading="lazy"></button>
+        <button class="g3 blanca" data-full="img/foto-3.jpg" aria-label="Ampliar foto 3"><img src="img/foto-3.jpg" alt="MBL-X 920 vista de tres cuartos" loading="lazy"></button>
+      </div>
+    </section>
+
+    <!-- 02 Puntos fuertes -->
+    <section id="ventajas">
+      <div class="sec-head"><span class="sec-num">02</span><h2>Por qué este equipo</h2></div>
+      <div class="features">
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">construction</span>
+          <h3>Excavación profunda</h3>
+          <p>4.74 m de profundidad y 5.73 m de alcance; con brazo extensible llega a 5.82 m y 7.02 m.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">local_shipping</span>
+          <h3>Cargadora de 1 m³</h3>
+          <p>Cazo de 1 m³ con autonivelación, 2.78 m de altura de descarga a 45° y 3819 kg de capacidad a altura total.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">settings</span>
+          <h3>Motor Perkins</h3>
+          <p>Perkins 1104D-44T turbo de 4.4 l: 70 kW a 2200 rpm y 395 Nm de par.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">swap_driving_apps_wheel</span>
+          <h3>Transmisión Carraro</h3>
+          <p>4 marchas adelante y 4 atrás con convertidor de par, frenos de disco húmedo y hasta 40 km/h.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">water_drop</span>
+          <h3>Hidráulica potente</h3>
+          <p>142 l/min a 225 bar y 5810 kgf de fuerza de arranque del cazo de la retroexcavadora.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">shield</span>
+          <h3>Cabina segura</h3>
+          <p>Cabina certificada ROPS / FOPS nivel 2, con aire acondicionado opcional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Datos técnicos -->
+    <section id="datos">
+      <div class="sec-head">
+        <span class="sec-num">03</span><h2>Datos técnicos</h2>
+        <p>Datos del fabricante para el modelo MBL-X 920 94P ST3.</p>
+      </div>
+      <div class="specs">
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">straighten</span>Peso y dimensiones</div>
+          <table>
+            <tr><td>Peso sin carga</td><td>7620 kg</td></tr>
+            <tr><td>Peso con cazo 7 en 1</td><td>7908 kg</td></tr>
+            <tr><td>Longitud total <span class="code">l1</span></td><td>7.33 m</td></tr>
+            <tr><td>Anchura total <span class="code">b1</span></td><td>2.33 m</td></tr>
+            <tr><td>Anchura con estabilizadores extendidos</td><td>3.91 m</td></tr>
+            <tr><td>Altura total <span class="code">h17</span></td><td>3.79 m</td></tr>
+            <tr><td>Altura de la cabina (con aire acondicionado) <span class="code">h6</span></td><td>2.83 m (2.86 m)</td></tr>
+            <tr><td>Distancia entre ejes (2WD / 4WD)</td><td>2.19 m / 2.13 m</td></tr>
+            <tr><td>Distancia al suelo <span class="code">m4</span></td><td>280 mm</td></tr>
+            <tr><td>Radio de giro sobre neumáticos, con / sin freno <span class="code">Wa1</span></td><td>3.85 m / 4.20 m</td></tr>
+            <tr><td>Radio de giro sobre el cazo, con / sin freno <span class="code">Wa5</span></td><td>5.55 m / 5.70 m</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">settings</span>Motor</div>
+          <table>
+            <tr><td>Marca</td><td>Perkins</td></tr>
+            <tr><td>Modelo</td><td class="wrap-ok">1104D-44T turbo, refrigerado por agua</td></tr>
+            <tr><td>Norma del motor</td><td>Stage III / Tier 3</td></tr>
+            <tr><td>Cilindrada</td><td>4.40 l</td></tr>
+            <tr><td>Potencia bruta</td><td>70 kW a 2200 rpm</td></tr>
+            <tr><td>Par máximo</td><td>395 Nm</td></tr>
+            <tr><td>Batería</td><td>12 V · 75 Ah</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">swap_driving_apps_wheel</span>Transmisión y frenos</div>
+          <table>
+            <tr><td>Transmisión</td><td>Carraro</td></tr>
+            <tr><td>Marchas (adelante / atrás)</td><td>4 / 4</td></tr>
+            <tr><td>Relación del convertidor de par</td><td>3.01:1</td></tr>
+            <tr><td>Velocidad 1.ª / 2.ª marcha</td><td>5.40 / 8.60 km/h</td></tr>
+            <tr><td>Velocidad 3.ª / 4.ª marcha</td><td>19.90 / 40 km/h</td></tr>
+            <tr><td>Freno de servicio</td><td>Disco húmedo</td></tr>
+            <tr><td>Oscilación del eje delantero (2WD / 4WD)</td><td>20° / 16°</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">water_drop</span>Hidráulico y tanques</div>
+          <table>
+            <tr><td>Caudal hidráulico</td><td>142 l/min</td></tr>
+            <tr><td>Presión de descarga principal</td><td>225 bar</td></tr>
+            <tr><td>Aceite hidráulico</td><td>90 l</td></tr>
+            <tr><td>Depósito de combustible</td><td>145 l</td></tr>
+            <tr><td>Aceite de transmisión / eje trasero</td><td>17.50 l / 17.50 l</td></tr>
+            <tr><td>Aceite de motor / refrigerante</td><td>9.10 l / 16 l</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">inventory_2</span>Cazos de serie</div>
+          <table>
+            <tr><td>Retroexcavadora: capacidad / ancho</td><td>0.24 m³ · 892 mm</td></tr>
+            <tr><td>Cargadora: capacidad / ancho</td><td>1 m³ · 2235 mm</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">tire_repair</span>Neumáticos y cabina</div>
+          <table>
+            <tr><td>Neumáticos de serie (del. / tras.)</td><td class="wrap-ok">12.5 x 18 - 12 PR / 16.9 x 28 - 12 PR</td></tr>
+            <tr><td>Neumáticos opcionales (del. / tras.)</td><td class="wrap-ok">9 x 16 - 16 PR / 14 x 25 - 20 PR</td></tr>
+            <tr><td>Cabina</td><td>ROPS / FOPS nivel 2</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Rendimiento -->
+    <section id="rendimiento">
+      <div class="sec-head">
+        <span class="sec-num">04</span><h2>Rendimiento</h2>
+        <p>Retroexcavadora con brazo estándar y con brazo extensible, y cargadora con su pala estándar.</p>
+      </div>
+      <div class="specs uno">
+        <div class="card spec-group tri">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">construction</span>Retroexcavadora</div>
+          <table>
+            <tr class="th"><td></td><td>Brazo estándar</td><td>Brazo extensible</td></tr>
+            <tr><td>Profundidad máx. de excavación <span class="code">p1</span></td><td>4.74 m</td><td>5.82 m</td></tr>
+            <tr><td>Profundidad máx. en muro recto <span class="code">p2</span></td><td>2.60 m</td><td>3.99 m</td></tr>
+            <tr><td>Alcance máx. a nivel del suelo <span class="code">r1</span></td><td>5.73 m</td><td>7.02 m</td></tr>
+            <tr><td>Alcance máx. de carga <span class="code">r2</span></td><td>2.00 m</td><td>4.85 m</td></tr>
+            <tr><td>Altura máx. operativa</td><td>5.63 m</td><td>6.64 m</td></tr>
+            <tr><td>Altura máx. de carga</td><td>3.87 m</td><td>4.85 m</td></tr>
+            <tr><td>Rotación máx. del cazo <span class="code">a10</span></td><td>194°</td><td>194°</td></tr>
+            <tr><td>Desplazamiento transversal</td><td>1.20 m</td><td>1.20 m</td></tr>
+            <tr><td>Fuerza de arranque del balancín</td><td>4336 kgf</td><td>2644 kgf</td></tr>
+            <tr><td>Fuerza de arranque del cazo</td><td>5810 kgf</td><td>5219 kgf</td></tr>
+            <tr><td>Capacidad de elevación hidráulica</td><td>1460 kg</td><td>812 kg</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">local_shipping</span>Cargadora (pala estándar)</div>
+          <table>
+            <tr><td>Altura máx. operativa <span class="code">h26</span></td><td>4.23 m</td></tr>
+            <tr><td>Altura máx. del pasador <span class="code">h25</span></td><td>3.57 m</td></tr>
+            <tr><td>Altura máx. de carga por encima <span class="code">h24</span></td><td>3.31 m</td></tr>
+            <tr><td>Altura máx. de descarga a 45° <span class="code">h23</span></td><td>2.78 m</td></tr>
+            <tr><td>Alcance a altura total a 45° <span class="code">r3</span></td><td>710 mm</td></tr>
+            <tr><td>Profundidad de excavación bajo el suelo <span class="code">p3</span></td><td>156 mm</td></tr>
+            <tr><td>Ángulo máx. de descarga</td><td>51°</td></tr>
+            <tr><td>Retroceso en el suelo <span class="code">a13</span></td><td>45°</td></tr>
+            <tr><td>Fuerza de arranque de la pala</td><td>5229 kgf</td></tr>
+            <tr><td>Fuerza de arranque de los brazos</td><td>5312 kgf</td></tr>
+            <tr><td>Capacidad de elevación a altura total</td><td>3819 kg</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Dimensiones -->
+    <section id="dimensiones">
+      <div class="sec-head"><span class="sec-num">05</span><h2>Dimensiones y alcances</h2><p>Toque un diagrama para ampliarlo.</p></div>
+      <div class="dims">
+        <figure class="card"><button data-full="img/dim-1.jpg" aria-label="Ampliar vista lateral"><img src="img/dim-1.jpg" alt="Vista lateral con cotas de longitud y distancia entre ejes" loading="lazy"></button><figcaption>Vista lateral</figcaption></figure>
+        <figure class="card"><button data-full="img/dim-2.jpg" aria-label="Ampliar vista trasera"><img src="img/dim-2.jpg" alt="Vista trasera con cotas de anchura y altura" loading="lazy"></button><figcaption>Vista trasera</figcaption></figure>
+        <figure class="card"><button data-full="img/dim-3.jpg" aria-label="Ampliar diagrama de alcances"><img src="img/dim-3.jpg" alt="Diagrama de alcances de la retroexcavadora y la cargadora" loading="lazy"></button><figcaption>Alcances de trabajo</figcaption></figure>
+      </div>
+      <div class="legend">
+        <span><b>l1</b> 7.33 m</span><span><b>b1</b> 2.33 m</span><span><b>h17</b> 3.79 m</span><span><b>h6</b> 2.83 m</span>
+        <span><b>m4</b> 280 mm</span><span><b>p1</b> 4.74 m</span><span><b>r1</b> 5.73 m</span><span><b>h26</b> 4.23 m</span>
+      </div>
+    </section>
+
+    <!-- 06 Cazos y accesorios -->
+    <section id="accesorios">
+      <div class="sec-head">
+        <span class="sec-num">06</span><h2>Cazos y accesorios</h2>
+        <p>Opciones del fabricante para la gama MBL. Consulte disponibilidad y precio con su asesor.</p>
+      </div>
+      <div class="acc-lista">
+        <div class="card"><span class="material-symbols-outlined" aria-hidden="true">construction</span><div><b>Cazos de retroexcavadora</b><span>De 0.10 a 0.31 m³; cazo reforzado de 0.20 m³ y cazo de limpieza de zanjas de 0.08 m³</span></div></div>
+        <div class="card"><span class="material-symbols-outlined" aria-hidden="true">local_shipping</span><div><b>Cazo de cargadora de 1.2 m³</b><span>Más volumen para carga de material suelto</span></div></div>
+        <div class="card"><span class="material-symbols-outlined" aria-hidden="true">forklift</span><div><b>Cazo multiuso con horquillas</b><span>Cargar, nivelar, sujetar y mover palés con el mismo cazo</span></div></div>
+        <div class="card"><span class="material-symbols-outlined" aria-hidden="true">hardware</span><div><b>Martillo hidráulico</b><span>Hasta 1017 J de energía por golpe</span></div></div>
+        <div class="card"><span class="material-symbols-outlined" aria-hidden="true">open_with</span><div><b>Brazo extensible</b><span>Más alcance y profundidad sin mover la máquina</span></div></div>
+        <div class="card"><span class="material-symbols-outlined" aria-hidden="true">ac_unit</span><div><b>Aire acondicionado y calefacción</b><span>Cabina climatizada (opcional)</span></div></div>
+      </div>
+    </section>
+
+    <!-- Llamado final -->
+    <div class="cta">
+      <div>
+        <h2>¿Le interesa la MBL-X 920?</h2>
+        <p>Su asesor comercial de Tecnogrúas le confirma disponibilidad, plazo de entrega, accesorios y condiciones de la cotización. Escríbanos por WhatsApp al <strong class="tel">6619-6650</strong>.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-accent" href="https://wa.me/50766196650?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20retroexcavadora%20Manitou%20MBL-X%20920" target="_blank" rel="noopener"><span class="material-symbols-outlined icon-sm">chat</span> Consultar por WhatsApp</a>
+        <a class="btn btn-outline-light" href="descargas/ficha-tecnica-mbl-x-920.pdf" download><span class="material-symbols-outlined icon-sm">download</span> Descargar ficha técnica</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="row">
+        <img class="logo" src="https://grupocorpinsa.github.io/assets/img/logo-tecnogruas-642.png" alt="Tecnogrúas">
+        <span>Distribuidor de equipos Manitou</span>
+      </div>
+      <p>Las especificaciones provienen del fabricante y son de carácter informativo; pueden cambiar sin previo aviso y no constituyen una oferta contractual. Las fotos pueden mostrar equipamiento opcional. Manitou y su logotipo son marcas de Manitou BF S.A.</p>
+    </div>
+  </footer>
+
+  <!-- Visor de imágenes ampliadas -->
+  <dialog class="viewer" id="viewer" aria-label="Imagen ampliada">
+    <button class="close" type="button" aria-label="Cerrar"><span class="material-symbols-outlined">close</span></button>
+    <img id="viewer-img" src="" alt="">
+  </dialog>
+
+  <script>
+    // Abre cualquier imagen con data-full en el visor; se cierra con el botón, Esc o tocando fuera
+    (function () {
+      var dlg = document.getElementById('viewer');
+      var img = document.getElementById('viewer-img');
+      document.querySelectorAll('[data-full]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          img.src = b.getAttribute('data-full');
+          img.alt = (b.querySelector('img') || {}).alt || '';
+          dlg.showModal();
+        });
+      });
+      dlg.querySelector('.close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    })();
+  </script>
+</body>
+</html>

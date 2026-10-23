@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- En revisión: que los buscadores no la indexen todavía. Quitar al lanzarla. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Manitou 1800R — Ficha técnica | Tecnogrúas</title>
+  <meta name="description" content="Minicargadora Manitou 1800R: 817 kg de capacidad nominal, motor Yanmar de 70.65 hp, 1.58 m de ancho. Ficha técnica y dimensiones.">
+  <meta property="og:title" content="Manitou 1800R — Ficha técnica">
+  <meta property="og:description" content="Minicargadora compacta: 817 kg · 3.02 m · 70.65 hp.">
+  <meta property="og:image" content="img/miniatura-cotizacion.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <style>
+    /* ---- Paleta: pieza de marca (cara al cliente) → naranja y negro, sin azul ---- */
+    :root {
+      --corp-accent:        #ff6600;
+      --corp-black:         #000000;
+      --ink:                #111111;
+      --bg:                 #f4f6fb;
+      --surface:            #ffffff;
+      --surface-alt:        #fafbfd;
+      --border:             #e2e8f0;
+      --text:               #0f172a;
+      --text-muted:         #64748b;
+      --text-light:         #94a3b8;
+      --accent-soft:        #fff1e6;
+      --on-dark:            #ffffff;
+      --on-dark-muted:      #cbd5e1;
+      --radius:             12px;
+      --radius-sm:          8px;
+      --shadow:             0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
+      --max:                1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 0;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .icon-sm { font-size: 18px; vertical-align: middle; }
+    .icon-md { font-size: 22px; vertical-align: middle; }
+
+    /* ---- Barra superior ---- */
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .topbar .wrap { display: flex; align-items: center; gap: 16px; min-height: 68px; }
+    .logo { height: 36px; width: auto; max-width: 60vw; flex-shrink: 1; object-fit: contain; }
+    .topbar nav { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+    .topbar nav a {
+      text-decoration: none; color: var(--text-muted); font-weight: 500;
+      padding: 8px 12px; border-radius: var(--radius-sm);
+    }
+    .topbar nav a:hover, .topbar nav a:focus-visible { color: var(--ink); background: var(--bg); }
+
+    /* ---- Botones ---- */
+    .btn {
+      min-height: 44px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600;
+      cursor: pointer; border: none; padding: 0 20px; display: inline-flex; align-items: center;
+      gap: 8px; text-decoration: none; transition: opacity .2s;
+    }
+    .btn:hover { opacity: .88; }
+    .btn:focus-visible { outline: 3px solid var(--corp-accent); outline-offset: 2px; }
+    .btn-accent  { background: var(--corp-accent); color: var(--on-dark); }
+    .btn-dark    { background: var(--ink); color: var(--on-dark); }
+    .btn-outline { background: transparent; border: 1.5px solid var(--ink); color: var(--ink); }
+    .btn-outline-light { background: transparent; border: 1.5px solid var(--on-dark); color: var(--on-dark); }
+
+    /* ---- Portada ---- */
+    .hero { position: relative; background: var(--corp-black); color: var(--on-dark); overflow: hidden; }
+    .hero img.bg {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.86) 0%, rgba(0,0,0,.6) 45%, rgba(0,0,0,0) 80%);
+    }
+    .hero .wrap { position: relative; z-index: 1; padding-top: 72px; padding-bottom: 72px; }
+    .eyebrow {
+      display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--corp-accent);
+    }
+    .hero h1 { font-size: 52px; line-height: 1.05; margin: 10px 0 8px; font-weight: 700; }
+    .hero .sub { font-size: 18px; color: var(--on-dark-muted); max-width: 520px; margin: 0 0 28px; }
+    .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* ---- Cifras clave ---- */
+    .kpis {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow); margin-top: -40px; position: relative; z-index: 2; overflow: hidden;
+    }
+    .kpi { padding: 22px 24px; border-right: 1px solid var(--border); }
+    .kpi:last-child { border-right: none; }
+    .kpi .val { font-size: 30px; font-weight: 700; color: var(--ink); line-height: 1.1; }
+    .kpi .val small { font-size: 16px; font-weight: 600; color: var(--text-muted); margin-left: 2px; }
+    .kpi .lbl { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+    .kpi .bar { width: 28px; height: 3px; background: var(--corp-accent); margin-bottom: 12px; border-radius: 2px; }
+
+    /* ---- Secciones ---- */
+    section { padding: 56px 0 8px; }
+    .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px; flex-wrap: wrap; }
+    .sec-num {
+      font-size: 13px; font-weight: 700; color: var(--corp-accent); letter-spacing: .06em;
+    }
+    h2 { font-size: 26px; margin: 0; color: var(--ink); }
+    .sec-head p { margin: 0; color: var(--text-muted); flex-basis: 100%; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+
+    /* ---- Galería ---- */
+    .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 220px 220px; gap: 12px; }
+    .gallery button {
+      padding: 0; border: none; border-radius: var(--radius); overflow: hidden; cursor: zoom-in;
+      background: var(--corp-black);
+    }
+    .gallery button:focus-visible { outline: 3px solid var(--corp-accent); outline-offset: 2px; }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+    .gallery button:hover img { transform: scale(1.03); }
+    .gallery .g1 { grid-row: 1 / 3; }
+    .gallery .g4 { grid-column: 2 / 4; }
+
+    /* ---- Puntos fuertes ---- */
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature { padding: 22px; }
+    .feature .material-symbols-outlined {
+      font-size: 26px; color: var(--corp-accent); background: var(--accent-soft);
+      border-radius: var(--radius-sm); padding: 8px;
+    }
+    .feature h3 { font-size: 16px; margin: 14px 0 6px; color: var(--ink); }
+    .feature p { margin: 0; color: var(--text-muted); font-size: 14px; }
+
+    /* ---- Datos técnicos ---- */
+    .specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
+    .spec-group .card-header {
+      padding: 14px 20px; border-bottom: 1px solid var(--border); font-weight: 700; color: var(--ink);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .spec-group .card-header .material-symbols-outlined { color: var(--corp-accent); }
+    .spec-group table { width: 100%; border-collapse: collapse; }
+    .spec-group td { padding: 10px 20px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .spec-group tr:last-child td { border-bottom: none; }
+    .spec-group td:first-child { color: var(--text-muted); }
+    .spec-group td:last-child { text-align: right; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .spec-group td.wrap-ok { white-space: normal; }
+    .code {
+      display: inline-block; font-size: 11px; font-weight: 700; color: var(--corp-accent);
+      background: var(--accent-soft); border-radius: 4px; padding: 0 5px; margin-left: 6px;
+    }
+
+    /* ---- Dimensiones y diagramas ---- */
+    .dims { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .dims figure, .charts figure { margin: 0; padding: 16px; }
+    .dims img { aspect-ratio: 1 / 1; object-fit: contain; width: 100%; }
+    figcaption { font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center; }
+    .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 16px; font-size: 13px; color: var(--text-muted); }
+    .legend b { color: var(--ink); }
+    .charts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .charts button { padding: 0; border: none; background: none; cursor: zoom-in; width: 100%; }
+
+    /* ---- Accesorios ---- */
+    .acc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .acc .card { overflow: hidden; display: flex; flex-direction: column; }
+    .acc .pic { background: var(--surface-alt); border-bottom: 1px solid var(--border); padding: 14px; height: 150px; }
+    .acc .pic img { width: 100%; height: 100%; object-fit: contain; }
+    .acc .body { padding: 14px 16px 16px; }
+    .acc .kind { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }
+    .acc h3 { font-size: 15px; margin: 4px 0 8px; color: var(--ink); }
+    .acc dl { margin: 0; display: grid; grid-template-columns: auto auto; gap: 2px 10px; font-size: 13px; }
+    .acc dt { color: var(--text-muted); }
+    .acc dd { margin: 0; text-align: right; font-weight: 600; }
+
+    /* ---- Llamado final ---- */
+    .cta {
+      background: var(--corp-black); color: var(--on-dark); border-radius: var(--radius);
+      padding: 36px; display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+      margin-top: 56px;
+    }
+    .cta h2 { color: var(--on-dark); }
+    .cta p { margin: 6px 0 0; color: var(--on-dark-muted); max-width: 560px; }
+    .cta .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .cta .tel { color: var(--on-dark); white-space: nowrap; }
+
+    footer { padding: 40px 0 48px; color: var(--text-muted); font-size: 12.5px; }
+    footer .row { display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 14px; }
+    footer .logo { height: 30px; }
+
+    /* ---- Visor de imágenes ---- */
+    dialog.viewer {
+      border: none; padding: 0; background: transparent; max-width: 96vw; max-height: 94vh;
+    }
+    dialog.viewer::backdrop { background: rgba(0,0,0,.88); }
+    dialog.viewer img { max-width: 96vw; max-height: 90vh; object-fit: contain; border-radius: var(--radius-sm); background: var(--surface); }
+    dialog.viewer .close {
+      position: fixed; top: 14px; right: 14px; width: 44px; height: 44px; border-radius: 50%;
+      border: none; background: var(--surface); color: var(--ink); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ---- Impresión ---- */
+    @media print {
+      .topbar, .hero .actions, .cta .actions, .gallery { display: none; }
+      .hero { background: var(--surface); color: var(--ink); }
+      .hero img.bg, .hero::after { display: none; }
+      .hero .sub { color: var(--text-muted); }
+      .kpis { margin-top: 0; box-shadow: none; }
+      section { break-inside: avoid; }
+    }
+
+    /* ---- Teléfono ---- */
+    @media (max-width: 900px) {
+      .features, .acc { grid-template-columns: repeat(2, 1fr); }
+      .specs, .charts { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .wrap { padding: 0 16px; }
+      .topbar nav { display: none; }
+      .topbar .wrap { justify-content: space-between; }
+      .hero .wrap { padding-top: 48px; padding-bottom: 72px; }
+      .hero h1 { font-size: 36px; }
+      .hero .sub { font-size: 16px; }
+      .hero::after { background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.85) 100%); }
+      .kpis { grid-template-columns: repeat(2, 1fr); }
+      .kpi { border-bottom: 1px solid var(--border); }
+      .kpi:nth-child(2n) { border-right: none; }
+      .kpi:nth-child(n+3) { border-bottom: none; }
+      .kpi { padding: 16px; }
+      .kpi .val { font-size: 22px; }
+      .specs > * { min-width: 0; }
+      .spec-group td { padding: 9px 14px; }
+      .spec-group table { table-layout: fixed; }
+      .spec-group td { overflow-wrap: anywhere; }
+      .spec-group td:last-child { white-space: normal; width: 45%; }
+      .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 120px 120px; }
+      .gallery .g1 { grid-row: auto; grid-column: 1 / 3; }
+      .gallery .g4 { grid-column: auto; }
+      .features { grid-template-columns: 1fr; }
+      .dims { grid-template-columns: 1fr 1fr; }
+      .dims figure:first-child { grid-column: 1 / 3; }
+      .acc { grid-template-columns: 1fr 1fr; }
+      .acc .pic { height: 110px; }
+      .cta { padding: 24px; }
+      h2 { font-size: 22px; }
+    }
+    @media (max-width: 420px) {
+      .acc { grid-template-columns: 1fr; }
+      .topbar .btn { padding: 0 12px; }
+      .topbar .btn .txt { display: none; }
+      .kpi .val { font-size: 20px; }
+      .kpi .val small { font-size: 13px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .gallery img { transition: none; }
+    }
+
+    /* ---- Añadidos de las fichas sin fotos de obra / sin diagramas de carga ---- */
+    .hero.studio { background: radial-gradient(ellipse at 75% 55%, #2a2a2a 0%, #000 70%); }
+    .hero.studio .wrap { display: flex; align-items: center; gap: 24px; padding-bottom: 88px; }
+    .hero.studio .hero-txt { flex: 1 1 50%; }
+    .hero.studio img.maq { flex: 0 1 46%; max-width: 520px; width: 46%; height: auto; filter: drop-shadow(0 18px 30px rgba(0,0,0,.6)); }
+    .gallery.blanca button, .gallery button.blanca { background: #ffffff; }
+    .gallery.blanca img, .gallery button.blanca img { object-fit: contain; }
+    .gallery.tres .g2, .gallery.tres .g3 { grid-column: 2 / 4; }
+    .dims button { padding: 0; border: none; background: none; cursor: zoom-in; width: 100%; display: block; }
+    .spec-group.tri td:nth-child(2), .spec-group.tri td:nth-child(3) { text-align: right; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .spec-group.tri tr.th td { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; }
+    .specs.uno { grid-template-columns: 1fr; }
+    .acc-lista { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .acc-lista .card { display: flex; gap: 14px; padding: 18px; align-items: flex-start; }
+    .acc-lista .material-symbols-outlined { color: var(--corp-accent); background: var(--accent-soft); border-radius: var(--radius-sm); padding: 8px; }
+    .acc-lista b { display: block; color: var(--ink); margin-bottom: 2px; }
+    .acc-lista span:not(.material-symbols-outlined) { color: var(--text-muted); font-size: 14px; }
+    @media (max-width: 900px) { .acc-lista { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .hero.studio .wrap { flex-direction: column; align-items: flex-start; padding-top: 40px; }
+      .hero.studio img.maq { width: 86%; align-self: center; }
+      .gallery.tres { grid-template-rows: 200px 160px; }
+      .gallery.tres .g2, .gallery.tres .g3 { grid-column: auto; }
+      .acc-lista { grid-template-columns: 1fr; }
+      .spec-group.tri td:nth-child(2), .spec-group.tri td:nth-child(3) { white-space: normal; width: 24%; }
+      .spec-group.tri td:last-child { width: 24%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="wrap">
+      <img class="logo" src="https://grupocorpinsa.github.io/assets/img/logo-tecnogruas-642.png" alt="Tecnogrúas">
+      <nav aria-label="Secciones">
+        <a href="#galeria">Galería</a>
+        <a href="#datos">Datos técnicos</a>
+        <a href="#dimensiones">Dimensiones</a>
+      </nav>
+      <a class="btn btn-accent" href="descargas/ficha-tecnica-1800r.pdf" download aria-label="Descargar ficha técnica en PDF">
+        <span class="material-symbols-outlined icon-sm">download</span> <span class="txt">Ficha PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Portada: foto de estudio sobre fondo oscuro (no hay fotos de obra de este modelo) -->
+  <div class="hero studio">
+    <div class="wrap">
+      <div class="hero-txt">
+        <span class="eyebrow">Manitou · Minicargadora</span>
+        <h1>1800R</h1>
+        <p class="sub">Minicargadora compacta de elevación radial: 817 kg de capacidad nominal, motor diésel Yanmar de 70.65 hp y solo 1.58 m de ancho para trabajar en espacios reducidos.</p>
+        <div class="actions">
+          <a class="btn btn-accent" href="https://wa.me/50766196650?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20minicargadora%20Manitou%201800R" target="_blank" rel="noopener"><span class="material-symbols-outlined icon-sm">chat</span> Consultar por WhatsApp</a>
+          <a class="btn btn-outline-light" href="#datos"><span class="material-symbols-outlined icon-sm">table_chart</span> Ver datos técnicos</a>
+        </div>
+      </div>
+      <img class="maq" src="img/portada-maquina.png" alt="Minicargadora Manitou 1800R">
+    </div>
+  </div>
+
+  <main class="wrap">
+
+    <!-- Cifras clave -->
+    <div class="kpis" role="list">
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">817<small>kg</small></div><div class="lbl">Capacidad de operación nominal</div></div>
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">3.02<small>m</small></div><div class="lbl">Altura hasta la bisagra</div></div>
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">70.65<small>hp</small></div><div class="lbl">Motor Yanmar · 51.20 kW</div></div>
+      <div class="kpi" role="listitem"><div class="bar"></div><div class="val">1.58<small>m</small></div><div class="lbl">Ancho total sin cucharón</div></div>
+    </div>
+
+    <!-- 01 Galería -->
+    <section id="galeria">
+      <div class="sec-head"><span class="sec-num">01</span><h2>Galería</h2></div>
+      <div class="gallery blanca tres">
+        <button class="g1" data-full="img/foto-1.jpg" aria-label="Ampliar foto 1"><img src="img/foto-1.jpg" alt="Manitou 1800R vista delantera de tres cuartos" loading="lazy"></button>
+        <button class="g2" data-full="img/foto-2.jpg" aria-label="Ampliar foto 2"><img src="img/foto-2.jpg" alt="Manitou 1800R vista lateral" loading="lazy"></button>
+        <button class="g3" data-full="img/foto-3.jpg" aria-label="Ampliar foto 3"><img src="img/foto-3.jpg" alt="Manitou 1800R vista lateral desde el otro lado" loading="lazy"></button>
+      </div>
+    </section>
+
+    <!-- 02 Puntos fuertes -->
+    <section id="ventajas">
+      <div class="sec-head"><span class="sec-num">02</span><h2>Por qué este equipo</h2></div>
+      <div class="features">
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">compress</span>
+          <h3>Compacta y ágil</h3>
+          <p>1.58 m de ancho sin cucharón, 2.43 m de largo y un radio de giro de 1.87 m: entra donde una cargadora grande no cabe.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">weight</span>
+          <h3>Capacidad</h3>
+          <p>817 kg de capacidad de operación nominal y 1633 kg de carga de vuelco, con 3.02 m de altura hasta la bisagra.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">settings</span>
+          <h3>Motor Yanmar</h3>
+          <p>Diésel Yanmar 4TNV98 de 4 cilindros: 70.65 hp (51.20 kW) y 241 Nm de par.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">water_drop</span>
+          <h3>Hidráulica auxiliar</h3>
+          <p>71.40 l/min a 207 bar para accesorios hidráulicos; opción de alto caudal con 94.60 l/min.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">local_shipping</span>
+          <h3>Descarga a camión</h3>
+          <p>2.38 m de altura de descarga con 38° de ángulo de vertido a la altura máxima.</p>
+        </div>
+        <div class="card feature">
+          <span class="material-symbols-outlined" aria-hidden="true">tire_repair</span>
+          <h3>Neumáticos de servicio pesado</h3>
+          <p>Neumáticos 10 x 16.5 HD y hasta 12.60 km/h de velocidad de desplazamiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Datos técnicos -->
+    <section id="datos">
+      <div class="sec-head">
+        <span class="sec-num">03</span><h2>Datos técnicos</h2>
+        <p>Datos del fabricante para el modelo 1800R.</p>
+      </div>
+      <div class="specs">
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">weight</span>Capacidad</div>
+          <table>
+            <tr><td>Capacidad de operación nominal</td><td>817 kg</td></tr>
+            <tr><td>Carga de vuelco</td><td>1633 kg</td></tr>
+            <tr><td>Peso sin carga</td><td>2892 kg</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">settings</span>Motor</div>
+          <table>
+            <tr><td>Marca</td><td>Yanmar</td></tr>
+            <tr><td>Modelo</td><td>4TNV98-ZNMS3R1</td></tr>
+            <tr><td>Norma del motor</td><td>Stage III / Tier 3</td></tr>
+            <tr><td>Combustible</td><td>Diésel</td></tr>
+            <tr><td>Cilindros / cilindrada</td><td>4 · 3.32 l</td></tr>
+            <tr><td>Potencia</td><td>70.65 hp / 51.20 kW</td></tr>
+            <tr><td>Par máximo</td><td>241 Nm a 2500 rpm</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">straighten</span>Peso y dimensiones</div>
+          <table>
+            <tr><td>Longitud total sin cucharón <span class="code">l2</span></td><td>2.43 m</td></tr>
+            <tr><td>Longitud total con cucharón <span class="code">l16</span></td><td>3.14 m</td></tr>
+            <tr><td>Ancho total sin cucharón <span class="code">b1</span></td><td>1.58 m</td></tr>
+            <tr><td>Anchura del cucharón <span class="code">e1</span></td><td>1.56 m</td></tr>
+            <tr><td>Altura total al techo <span class="code">h17</span></td><td>1.95 m</td></tr>
+            <tr><td>Distancia entre ejes <span class="code">y</span></td><td>988 mm</td></tr>
+            <tr><td>Distancia al suelo <span class="code">m4</span></td><td>160 mm</td></tr>
+            <tr><td>Altura del asiento al suelo <span class="code">h30</span></td><td>930 mm</td></tr>
+            <tr><td>Radio de giro exterior (frente del cucharón) <span class="code">b18</span></td><td>1.87 m</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">height</span>Elevación y descarga</div>
+          <table>
+            <tr><td>Altura totalmente elevada <span class="code">h27</span></td><td>3.88 m</td></tr>
+            <tr><td>Altura hasta la bisagra, elevación completa <span class="code">h28</span></td><td>3.02 m</td></tr>
+            <tr><td>Altura de descarga <span class="code">h29</span></td><td>2.38 m</td></tr>
+            <tr><td>Alcance de descarga a la altura máxima <span class="code">r6</span></td><td>579 mm</td></tr>
+            <tr><td>Ángulo de vertido a la altura máxima <span class="code">a5</span></td><td>38°</td></tr>
+            <tr><td>Ángulo de volteo del cucharón a la altura máxima <span class="code">a4</span></td><td>99°</td></tr>
+            <tr><td>Retroceso en el suelo <span class="code">a13</span></td><td>28°</td></tr>
+            <tr><td>Ángulo de inclinación <span class="code">a2</span></td><td>19°</td></tr>
+            <tr><td>Ángulo de salida trasero</td><td>19°</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">water_drop</span>Hidráulico y tanques</div>
+          <table>
+            <tr><td>Hidráulica auxiliar</td><td>71.40 l/min · 207 bar</td></tr>
+            <tr><td>Hidráulica auxiliar de alto caudal (opcional)</td><td>94.60 l/min · 207 bar</td></tr>
+            <tr><td>Depósito de combustible</td><td>62.50 l</td></tr>
+            <tr><td>Depósito hidráulico</td><td>41.60 l</td></tr>
+            <tr><td>Cárter de cadenas (izquierdo / derecho)</td><td>8.50 l / 8.50 l</td></tr>
+          </table>
+        </div>
+        <div class="card spec-group">
+          <div class="card-header"><span class="material-symbols-outlined icon-md" aria-hidden="true">bolt</span>Desplazamiento y sistema eléctrico</div>
+          <table>
+            <tr><td>Velocidad de desplazamiento (en vacío)</td><td>12.60 km/h</td></tr>
+            <tr><td>Neumáticos</td><td>10 x 16.5 - 10 PR HD</td></tr>
+            <tr><td>Batería / toma para accesorios</td><td>12 V / 12 V</td></tr>
+            <tr><td>Alternador</td><td>100 A</td></tr>
+            <tr><td>Motor de arranque</td><td>3 kW</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Dimensiones -->
+    <section id="dimensiones">
+      <div class="sec-head"><span class="sec-num">04</span><h2>Dimensiones</h2><p>Toque un diagrama para ampliarlo.</p></div>
+      <div class="dims">
+        <figure class="card"><button data-full="img/dim-1.jpg" aria-label="Ampliar vista lateral"><img src="img/dim-1.jpg" alt="Vista lateral con cotas de alturas, longitudes y ángulos" loading="lazy"></button><figcaption>Vista lateral</figcaption></figure>
+        <figure class="card"><button data-full="img/dim-2.jpg" aria-label="Ampliar vista frontal"><img src="img/dim-2.jpg" alt="Vista frontal con cotas de anchura" loading="lazy"></button><figcaption>Vista frontal</figcaption></figure>
+        <figure class="card"><button data-full="img/dim-3.jpg" aria-label="Ampliar vista superior"><img src="img/dim-3.jpg" alt="Vista superior con radio de giro" loading="lazy"></button><figcaption>Vista superior y radio de giro</figcaption></figure>
+      </div>
+      <div class="legend">
+        <span><b>h27</b> 3.88 m</span><span><b>h28</b> 3.02 m</span><span><b>h29</b> 2.38 m</span><span><b>h17</b> 1.95 m</span>
+        <span><b>l16</b> 3.14 m</span><span><b>l2</b> 2.43 m</span><span><b>b1</b> 1.58 m</span><span><b>e1</b> 1.56 m</span>
+        <span><b>y</b> 988 mm</span><span><b>m4</b> 160 mm</span><span><b>b18</b> 1.87 m</span>
+      </div>
+    </section>
+
+    <!-- Llamado final -->
+    <div class="cta">
+      <div>
+        <h2>¿Le interesa la 1800R?</h2>
+        <p>Su asesor comercial de Tecnogrúas le confirma disponibilidad, plazo de entrega, accesorios y condiciones de la cotización. Escríbanos por WhatsApp al <strong class="tel">6619-6650</strong>.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-accent" href="https://wa.me/50766196650?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20minicargadora%20Manitou%201800R" target="_blank" rel="noopener"><span class="material-symbols-outlined icon-sm">chat</span> Consultar por WhatsApp</a>
+        <a class="btn btn-outline-light" href="descargas/ficha-tecnica-1800r.pdf" download><span class="material-symbols-outlined icon-sm">download</span> Descargar ficha técnica</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="row">
+        <img class="logo" src="https://grupocorpinsa.github.io/assets/img/logo-tecnogruas-642.png" alt="Tecnogrúas">
+        <span>Distribuidor de equipos Manitou</span>
+      </div>
+      <p>Las especificaciones provienen del fabricante y son de carácter informativo; pueden cambiar sin previo aviso y no constituyen una oferta contractual. Las fotos pueden mostrar equipamiento opcional. Manitou y su logotipo son marcas de Manitou BF S.A.</p>
+    </div>
+  </footer>
+
+  <!-- Visor de imágenes ampliadas -->
+  <dialog class="viewer" id="viewer" aria-label="Imagen ampliada">
+    <button class="close" type="button" aria-label="Cerrar"><span class="material-symbols-outlined">close</span></button>
+    <img id="viewer-img" src="" alt="">
+  </dialog>
+
+  <script>
+    // Abre cualquier imagen con data-full en el visor; se cierra con el botón, Esc o tocando fuera
+    (function () {
+      var dlg = document.getElementById('viewer');
+      var img = document.getElementById('viewer-img');
+      document.querySelectorAll('[data-full]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          img.src = b.getAttribute('data-full');
+          img.alt = (b.querySelector('img') || {}).alt || '';
+          dlg.showModal();
+        });
+      });
+      dlg.querySelector('.close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    })();
+  </script>
+</body>
+</html>
